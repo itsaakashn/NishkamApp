@@ -12,7 +12,7 @@ This document provides the answers for Google Play Console's **Data Safety** for
 |----------|--------|
 | Does your app collect or share any of the required user data types? | **Yes — limited to Name and Email address, both tied to the mandatory Google Sign-In required to use the app** |
 | Is all data collected encrypted in transit? | **Yes** — the Google Sign-In flow is encrypted via Google's own HTTPS/TLS infrastructure |
-| Does your app provide a way for users to request that their data is deleted? | **Yes** — by signing out, via Android Settings → Apps → Nishkam → Clear Data, or by uninstalling |
+| Does your app provide a way for users to request that their data is deleted? | **Yes** — in-app Settings → Delete account & data; web instructions at https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md |
 
 > Nishkam requires Google Sign-In to use the app — there is no guest/anonymous mode. The two items below are collected for every user as a result.
 
@@ -89,7 +89,7 @@ Use these answers directly in the Play Console Data Safety section:
 
 **Do you provide a way for users to request that their data is deleted?**
 → **Yes**
-→ *(Deletion method: Users can sign out to clear the locally stored Google display name, clear all app data via Android Settings → Apps → Nishkam → Storage → Clear Data, or uninstall the app to permanently delete all local data.)*
+→ *(Account deletion URL for Play Console: https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md — in-app: Settings → Delete account & data. Users can also sign out to clear the locally stored Google display name, clear all app data via Android Settings → Apps → Nishkam → Storage → Clear Data, or uninstall the app to permanently delete all local data.)*
 
 ### Section: Data types
 

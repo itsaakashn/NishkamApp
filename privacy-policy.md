@@ -1,7 +1,7 @@
 # Privacy Policy — Nishkam App
 
 **Effective Date:** June 11, 2025
-**Last Updated:** June 24, 2026
+**Last Updated:** July 27, 2026
 **App Package:** `com.nishkam.app`
 **Developer:** Nishkam App (theaighth@gmail.com)
 
@@ -118,22 +118,25 @@ As described in Section 3.2, Google Sign-In is implemented using Google's offici
 
 | Android Permission | Reason |
 |--------------------|--------|
-| `POST_NOTIFICATIONS` | To deliver your opted-in daily verse reminder notification |
-| `RECEIVE_BOOT_COMPLETED` | To re-register your notification alarm after device restart |
+| `POST_NOTIFICATIONS` | To deliver your opted-in daily verse reminder notification (scheduled as a battery-friendly inexact alarm — we deliberately do not request `SCHEDULE_EXACT_ALARM`) |
+| `RECEIVE_BOOT_COMPLETED` | To re-register your notification reminder after device restart |
 | `INTERNET` | Required for the Google Sign-In flow, to communicate with Google's servers |
 | `VIBRATE` | Used for tactile feedback on taps and selections, and by the notification channel |
 
 We do **not** request access to contacts, camera, microphone, location, phone state, storage, or any other sensitive permission.
 
+**Device time zone:** if — and only if — you set a daily reminder, the App reads your device's time zone name (for example `Asia/Kolkata`) so the reminder fires at the hour you actually chose rather than at that hour in UTC. This is read on-device at scheduling time, is never stored by the App, and is never transmitted anywhere. It requires no permission and is not location data.
+
 ---
 
 ## 7. Data Retention and Deletion
 
-All data described in Section 3.3 is stored exclusively on your device. You can delete it at any time by:
+All data described in Section 3.3 is stored exclusively on your device. You can delete your account and all of its data at any time by:
 
-1. **Clearing app data:** Go to Android Settings → Apps → Nishkam → Storage → Clear Data.
-2. **Uninstalling the App:** All local data is permanently and irreversibly deleted when you uninstall.
-3. **Signing out:** Signing out from Settings clears your locally stored name and returns you to the sign-in screen.
+1. **Deleting your account in the App (recommended):** Settings → **Delete account & data**. This permanently wipes every piece of data the App stores on your device and revokes Nishkam's access to your Google account. Full instructions: [https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md](https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md).
+2. **Clearing app data:** Go to Android Settings → Apps → Nishkam → Storage → Clear Data.
+3. **Uninstalling the App:** All local data is permanently and irreversibly deleted when you uninstall.
+4. **Signing out:** Signing out from Settings clears your locally stored name and returns you to the sign-in screen.
 
 We have no ability to recover this data on your behalf, as we never held it.
 

@@ -12,6 +12,7 @@ This repository contains the official legal policy documents for the **Nishkam**
 | File | Description |
 |---|---|
 | [privacy-policy.md](privacy-policy.md) | Privacy Policy |
+| [delete-account.md](delete-account.md) | Delete your account and data |
 | [terms-of-service.md](terms-of-service.md) | Terms of Service |
 | [security-policy.md](security-policy.md) | Security Policy |
 | [disclaimer.md](disclaimer.md) | Disclaimer |

@@ -93,6 +93,6 @@ We follow a **coordinated disclosure** model:
 ## Contact
 
 **Security reports:** theaighth@gmail.com (use subject line `[SECURITY]`)
-**General issues:** [github.com/itsaakashn/NishkamApp/issues](https://github.com/itsaakashn/NishkamApp/issues)
+**General issues:** theaighth@gmail.com
 
 Thank you for helping keep Nishkam users safe.

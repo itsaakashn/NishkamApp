@@ -10,7 +10,7 @@ This document provides the answers for Google Play Console's **Data Safety** for
 
 | Question | Answer |
 |----------|--------|
-| Does your app collect or share any of the required user data types? | **Yes — limited to Name, Email address and User ID, both tied to the mandatory Google Sign-In required to use the app** |
+| Does your app collect or share any of the required user data types? | **Yes — limited to Name, Email address and User ID, all tied to the mandatory Google Sign-In required to use the app** |
 | Is all data collected encrypted in transit? | **Yes** — the Google Sign-In flow is encrypted via Google's own HTTPS/TLS infrastructure |
 | Does your app provide a way for users to request that their data is deleted? | **Yes** — in-app Settings → Delete account & data; web instructions at https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md |
 

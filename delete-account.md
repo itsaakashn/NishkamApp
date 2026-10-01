@@ -21,6 +21,11 @@ If you no longer have the app installed, email **theaighth@gmail.com** with the 
 
 You can also remove Nishkam's access yourself at any time at [myaccount.google.com/connections](https://myaccount.google.com/connections) → Nishkam → **Delete all connections**.
 
+## Delete some data without deleting your account
+
+- **Logout** (Settings → Logout) clears your stored name and date of birth, and keeps your reading progress on the device.
+- **Clear app data** (Android Settings → Apps → Nishkam → Storage → Clear data) erases all data stored by the app.
+
 ---
 
 ## What is deleted

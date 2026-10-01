@@ -10,7 +10,7 @@ This document provides the answers for Google Play Console's **Data Safety** for
 
 | Question | Answer |
 |----------|--------|
-| Does your app collect or share any of the required user data types? | **Yes — limited to Name and Email address, both tied to the mandatory Google Sign-In required to use the app** |
+| Does your app collect or share any of the required user data types? | **Yes — limited to Name, Email address and User ID, both tied to the mandatory Google Sign-In required to use the app** |
 | Is all data collected encrypted in transit? | **Yes** — the Google Sign-In flow is encrypted via Google's own HTTPS/TLS infrastructure |
 | Does your app provide a way for users to request that their data is deleted? | **Yes** — in-app Settings → Delete account & data; web instructions at https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md |
 
@@ -28,6 +28,7 @@ This document provides the answers for Google Play Console's **Data Safety** for
 |----------|-----------|-----------|---------|-------------------|---------|
 | Personal info | Name | ✓ Collected (from Google Sign-In) | ✗ Not shared | Required — Google Sign-In is mandatory to use the App | App functionality / personalization |
 | Personal info | Email address | ✓ Collected (from Google Sign-In, used transiently for authentication only — never stored by the App) | ✗ Not shared | Required — Google Sign-In is mandatory to use the App | Account management (authentication) |
+| Personal info | User IDs | ✓ Collected (Google account ID, exchanged with Google during sign-in only — never stored by the App) | ✗ Not shared | Required | Account management (authentication) |
 | Personal info | Phone number | ✗ Not collected | ✗ | — | — |
 | Personal info | Race and ethnicity | ✗ Not collected | ✗ | — | — |
 | Personal info | Religious or political beliefs | ✗ Not collected | ✗ | — | — |
@@ -105,6 +106,7 @@ In-app account deletion: Settings → **Delete account & data** (erases all loca
 |----------|------|-----------|
 | Personal info | Name | **Collected**, not shared, **required**, purpose: App functionality |
 | Personal info | Email address | **Collected**, not shared, **required**, purpose: Account management |
+| Personal info | User IDs (Google account ID used by Sign-In) | **Collected**, not shared, **required**, purpose: Account management |
 | All other categories (Location, Financial info, Health & fitness, Messages, Photos & videos, Audio, Files & docs, Calendar, Contacts, App activity, Web browsing, App info & performance, Device IDs) | every item | **No data collected** |
 
 ---

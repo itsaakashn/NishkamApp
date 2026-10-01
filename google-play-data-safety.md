@@ -2,7 +2,7 @@
 
 This document provides the answers for Google Play Console's **Data Safety** form, required for all apps published on the Play Store. It is published here for transparency so that users can independently verify the claims made in our Play Store listing.
 
-**Last Updated:** June 22, 2026
+**Last Updated:** October 1, 2026
 
 ---
 
@@ -56,13 +56,14 @@ The following data is stored **only on the user's device** and never transmitted
 
 | Data | Storage | User Can Delete? |
 |------|---------|----------------|
-| Display name (from Google sign-in) | Android SharedPreferences | Yes — Sign out / Clear Data / Uninstall |
-| Date of birth (optional) | Android SharedPreferences | Yes — Clear Data / Uninstall |
-| Guidance path selection (Student / Professional / Grihastha) | Android SharedPreferences | Yes — Clear Data / Uninstall |
-| Display language (English / Hindi / Gujarati) | Android SharedPreferences | Yes — Clear Data / Uninstall |
-| Reading progress | Android SharedPreferences | Yes — Clear Data / Uninstall |
-| Bookmarked verses | Android SharedPreferences | Yes — Clear Data / Uninstall |
-| Notification time preference | Android SharedPreferences | Yes — Clear Data / Uninstall |
+| Display name (from Google sign-in) | Android SharedPreferences | Yes — Delete account & data / Sign out / Clear Data / Uninstall |
+| Date of birth (optional) | Android SharedPreferences | Yes — Delete account & data / Sign out / Clear Data / Uninstall |
+| Guidance path selection (Student / Professional / Grihastha) | Android SharedPreferences | Yes — Delete account & data / Clear Data / Uninstall |
+| Display language (English / Hindi / Gujarati) | Android SharedPreferences | Yes — Delete account & data / Clear Data / Uninstall |
+| Reading progress | Android SharedPreferences | Yes — Delete account & data / Clear Data / Uninstall |
+| Bookmarked verses | Android SharedPreferences | Yes — Delete account & data / Clear Data / Uninstall |
+| Reading streak, "Carry This" commitments, poster font | Android SharedPreferences | Yes — Delete account & data / Clear Data / Uninstall |
+| Notification time preference | Android SharedPreferences | Yes — Delete account & data / Clear Data / Uninstall |
 
 ---
 
@@ -87,9 +88,16 @@ Use these answers directly in the Play Console Data Safety section:
 **Is all data collected encrypted in transit?**
 → **Yes**
 
-**Do you provide a way for users to request that their data is deleted?**
-→ **Yes**
-→ *(Account deletion URL for Play Console: https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md — in-app: Settings → Delete account & data. Users can also sign out to clear the locally stored Google display name, clear all app data via Android Settings → Apps → Nishkam → Storage → Clear Data, or uninstall the app to permanently delete all local data.)*
+**Which methods of account creation does your app support?**
+→ **OAuth** (Google Sign-In)
+
+**Delete account URL**
+→ https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md
+
+**Do you provide a way for users to request that some or all of their data is deleted, without requiring them to delete their account?**
+→ **Yes** — Settings → Logout clears the stored name and date of birth while keeping reading progress; Android Settings → Apps → Nishkam → Clear data erases everything.
+
+In-app account deletion: Settings → **Delete account & data** (erases all local data, cancels reminders, revokes Google access).
 
 ### Section: Data types
 

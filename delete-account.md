@@ -3,7 +3,7 @@
 **App:** Nishkam — Bhagavad Gita (`com.nishkam.app`)  
 **Developer:** The Aighth · theaighth@gmail.com
 
-**Last Updated:** September 30, 2026
+**Last Updated:** October 1, 2026
 
 ---
 

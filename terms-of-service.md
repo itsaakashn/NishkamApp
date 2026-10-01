@@ -1,15 +1,15 @@
 # Terms of Service — Nishkam App
 
 **Effective Date:** June 11, 2025
-**Last Updated:** June 24, 2026
+**Last Updated:** October 1, 2026
 **App Package:** `com.nishkam.app`
-**Developer:** Nishkam App (theaighth@gmail.com)
+**Developer:** The Aighth (theaighth@gmail.com)
 
 ---
 
 ## 1. Acceptance of Terms
 
-By downloading, installing, or using the **Nishkam** Android application ("App"), you ("User," "you") agree to be legally bound by these Terms of Service ("Terms"). These Terms constitute a legally binding agreement between you and the Nishkam development team ("we," "us," "our").
+By downloading, installing, or using the **Nishkam** Android application ("App"), you ("User," "you") agree to be legally bound by these Terms of Service ("Terms"). These Terms constitute a legally binding agreement between you and The Aighth, the developer of Nishkam ("we," "us," "our").
 
 **If you do not agree to these Terms in their entirety, you must not download, install, or use the App.**
 
@@ -29,7 +29,7 @@ Nishkam is a personal growth and spiritual wisdom application based on the **Bha
 - Daily verse reminder notifications
 - A shareable verse poster ("Liquid Glass Poster") for social sharing
 - A "Control Circle" reflection feature for applying verses to daily decisions
-- Sign-in with Google to keep your progress tied to your account
+- Sign-in with Google (your profile and progress are stored only on your device)
 
 The App is intended for **personal, non-commercial, educational, inspirational, and reflective use only.**
 
@@ -48,7 +48,7 @@ We are not liable for any loss or damage arising from your failure to maintain a
 
 ### 3.2 Account Termination
 
-Since Nishkam stores your data locally only, "deleting your account" means signing out, clearing the App's local data (Settings → Android → Apps → Nishkam → Clear Data), or uninstalling the App. We cannot delete data we do not hold.
+You can delete your account at any time from Settings → **Delete account & data**. This permanently erases all data the App stores on your device and revokes Nishkam's access to your Google account. If you no longer have the App, email theaighth@gmail.com with the subject "Nishkam account deletion". Full instructions: [https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md](https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md). See Section 7 of the Privacy Policy for details.
 
 ---
 

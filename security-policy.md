@@ -1,6 +1,6 @@
 # Security Policy — Nishkam App
 
-**Last Updated:** June 24, 2026
+**Last Updated:** October 1, 2026
 
 ---
 
@@ -52,13 +52,13 @@ To help us triage and fix the issue as quickly as possible, please include:
 
 ### Data at Rest
 
-- All Bhagavad Gita verse content is encrypted using **AES-256** encryption before bundling in the App.
+- All Bhagavad Gita verse content is encrypted using **AES-256** with **HMAC-SHA256** integrity protection before bundling in the App, and decrypted only on-device.
 - User preferences (name, path, progress, bookmarks) are stored in Android's private app data directory (`SharedPreferences`), which is inaccessible to other apps on non-rooted devices.
 
 ### No External Data Transmission
 
-- The App transmits **zero user data** to any external server.
-- There are no network calls made by the App during normal operation.
+- The App transmits **no user data** to any server we operate — we operate none.
+- The only network traffic is the Google Sign-In flow, which runs directly between your device and Google over HTTPS/TLS. Fonts and all verse content are bundled in the App.
 - The App does not use analytics, advertising, or crash-reporting SDKs.
 
 ### Production Integrity Check
@@ -76,7 +76,7 @@ To help us triage and fix the issue as quickly as possible, please include:
 | Limitation | Notes |
 |-----------|-------|
 | Local data unprotected on rooted devices | The integrity check mitigates this in release mode |
-| No remote wipe | We cannot delete local user data remotely since we never held it |
+| No remote wipe | We never hold user data, so deletion happens on-device: Settings → Delete account & data |
 
 ---
 
@@ -93,6 +93,6 @@ We follow a **coordinated disclosure** model:
 ## Contact
 
 **Security reports:** theaighth@gmail.com (use subject line `[SECURITY]`)
-**General issues:** theaighth@gmail.com
+**General issues:** [github.com/itsaakashn/NishkamApp/issues](https://github.com/itsaakashn/NishkamApp/issues)
 
 Thank you for helping keep Nishkam users safe.

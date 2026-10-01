@@ -1,9 +1,9 @@
 # Privacy Policy — Nishkam App
 
 **Effective Date:** June 11, 2025
-**Last Updated:** July 27, 2026
+**Last Updated:** October 1, 2026
 **App Package:** `com.nishkam.app`
-**Developer:** Nishkam App (theaighth@gmail.com)
+**Developer:** The Aighth (theaighth@gmail.com)
 
 ---
 
@@ -52,7 +52,8 @@ Nishkam requires you to sign in with your Google account to use the App. When yo
 - We request only the `email` OAuth scope, solely to complete the sign-in handshake with Google.
 - We **store only your Google account's display name** locally on your device, to personalize greetings and the shareable verse poster. **Your email address itself is never stored by the App, before or after sign-in.**
 - Google's handling of your account data during this process is governed by [Google's own Privacy Policy](https://policies.google.com/privacy).
-- You can sign out at any time from Settings; doing so returns you to the sign-in screen and clears your locally stored display name.
+- You can sign out at any time from Settings; doing so returns you to the sign-in screen and clears your locally stored display name and date of birth.
+- You can delete your account at any time from Settings → **Delete account & data** (see Section 7).
 
 ### 3.3 Information Stored Locally on Your Device
 
@@ -66,6 +67,9 @@ Beyond your Google account sign-in above, Nishkam stores the following data **ex
 | Chosen display language (English / Hindi / Gujarati) | Displays verse content and app text in your preferred language |
 | Reading progress (which verses are read, current verse) | Tracks your journey through all 701 verses |
 | Bookmarked verses | Stores your saved verse library |
+| Reading streak and last-opened date | Shows your daily reading streak |
+| "Carry This" commitments | Remembers the verse you chose to carry into your day |
+| Poster font preference | Remembers your chosen font for the shareable verse poster |
 | Notification time preference | Schedules your daily verse reminder |
 | Login state | Determines whether onboarding has been completed |
 
@@ -73,7 +77,7 @@ Beyond your Google account sign-in above, Nishkam stores the following data **ex
 
 ### 3.4 Encrypted App Content
 
-The Bhagavad Gita verse content bundled within the App is stored in an encrypted format (`assets/data/gita.enc`) using AES-256 encryption. This is a content-protection measure to protect our intellectual property — it is not a mechanism to collect or access your data.
+The Bhagavad Gita verse content bundled within the App is stored in an encrypted format (`assets/data/gita.enc`) using AES-256 encryption with HMAC-SHA256 integrity protection, and is decrypted only on your device. This is a content-protection measure to protect our intellectual property — it is not a mechanism to collect or access your data.
 
 ---
 
@@ -131,20 +135,29 @@ We do **not** request access to contacts, camera, microphone, location, phone st
 
 ## 7. Data Retention and Deletion
 
-All data described in Section 3.3 is stored exclusively on your device. You can delete your account and all of its data at any time by:
+All data described in Section 3.3 is stored exclusively on your device and is kept only until you delete it. We hold no copy on any server.
 
-1. **Deleting your account in the App (recommended):** Settings → **Delete account & data**. This permanently wipes every piece of data the App stores on your device and revokes Nishkam's access to your Google account. Full instructions: [https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md](https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md).
-2. **Clearing app data:** Go to Android Settings → Apps → Nishkam → Storage → Clear Data.
-3. **Uninstalling the App:** All local data is permanently and irreversibly deleted when you uninstall.
-4. **Signing out:** Signing out from Settings clears your locally stored name and returns you to the sign-in screen.
+### 7.1 Deleting your account
 
-We have no ability to recover this data on your behalf, as we never held it.
+You can delete your Nishkam account and all associated data at any time:
+
+1. **In the App (instant):** Settings → **Delete account & data** → **Delete**. This permanently erases everything listed in Section 3.3, cancels your daily reminder, and revokes Nishkam's access to your Google account.
+2. **Without the App:** email **theaighth@gmail.com** with the subject "Nishkam account deletion" from the Google account you signed in with. We will reply within 7 days. You can also revoke Nishkam's access yourself at [myaccount.google.com/connections](https://myaccount.google.com/connections).
+
+Nothing is retained after deletion, and there is no retention period. Your Google account itself is not affected. Step-by-step instructions: [https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md](https://github.com/itsaakashn/NishkamApp/blob/main/delete-account.md).
+
+### 7.2 Deleting some data without deleting your account
+
+- **Signing out** (Settings → Logout) clears your stored name and date of birth while keeping your reading progress on the device.
+- **Clearing app data** (Android Settings → Apps → Nishkam → Storage → Clear data) or **uninstalling** the App erases all local data.
+
+Because we never hold your data, we cannot recover it after deletion.
 
 ---
 
 ## 8. Children's Privacy (COPPA Compliance)
 
-Nishkam's content is appropriate for users of all ages, but a Google account is required to use the App. We do not separately collect or verify age — account eligibility is governed entirely by Google's own age requirements and parental-supervision tools (such as Google Family Link) for account holders. We do not knowingly collect personal information beyond what is described in Section 3.2 from any user, consistent with the Children's Online Privacy Protection Act (COPPA).
+Nishkam's content is appropriate for all ages, but the App is intended for users aged **13 and older** (see our Terms of Service), and a Google account is required to use it. We do not separately collect or verify age — account eligibility is governed entirely by Google's own age requirements and parental-supervision tools (such as Google Family Link) for account holders. We do not knowingly collect personal information beyond what is described in Section 3.2 from any user, consistent with the Children's Online Privacy Protection Act (COPPA).
 
 If you believe a child has used the App in a manner inconsistent with COPPA, please contact us at the address below.
 
@@ -155,7 +168,7 @@ If you believe a child has used the App in a manner inconsistent with COPPA, ple
 Nishkam minimizes personal data processing wherever possible. For users in the European Economic Area (EEA), the United Kingdom, and other jurisdictions with data protection laws:
 
 - **Legal basis for processing:** Signing in with Google is necessary to provide the App's core functionality (performance of a contract at your request). For all other locally stored preferences, the basis is the same — performance of the App's core functionality you have requested.
-- **Data subject rights (access, rectification, erasure, portability):** All data we hold resides on your own device; you have full, direct control of it via Section 7.
+- **Data subject rights (access, rectification, erasure, portability):** All data resides on your own device, so you have full, direct control of it. You can exercise erasure at any time via Settings → Delete account & data (Section 7).
 - **Data Protection Officer (DPO):** Not required given the limited scope of data processed.
 
 ---

@@ -1,9 +1,9 @@
 # Disclaimer — Nishkam App
 
 **Effective Date:** June 11, 2025
-**Last Updated:** June 24, 2026
+**Last Updated:** October 1, 2026
 **App Package:** `com.nishkam.app`
-**Developer:** Nishkam App (theaighth@gmail.com)
+**Developer:** The Aighth (theaighth@gmail.com)
 
 ---
 
